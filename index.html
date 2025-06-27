@@ -1,0 +1,238 @@
+<!DOCTYPE html>  <html lang="id">  
+<head>  
+  <meta charset="UTF-8" />  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>  
+  <title>Aboutme</title>  
+  <link rel="stylesheet" href="style.css" />  
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />  
+</head>  
+<body>  
+  <div class="page" id="home">  
+    <img src="https://files.catbox.moe/edrz6w.jpg" alt="Logo" class="logo floating" />  
+    <audio id="bg-music" src="https://files.catbox.moe/z4b1u2"></audio>  
+    <button onclick="toggleMusic()">Play Music</button>  <!-- Pemutar Musik -->  
+<div id="music-player" style="display:none; margin-top:10px; text-align:center;">  
+  <p id="music-title"><strong>Judul Lagu:</strong> DJ STECU STECU X PICA PICA SLOW</p>  
+  <p id="music-artist"><strong>Penyanyi:</strong> NDAA FVNK</p>  
+  <input type="range" id="seek-bar" value="0" style="width:80%;" />  
+  <p><span id="current-time">0:00</span> / <span id="duration">0:00</span></p>  
+  <button onclick="stopMusic()">Stop</button>  
+</div>  
+
+<nav>  
+</nav>  
+<p id="typed-text"></p>  
+<script>
+
+const text = "Halo! Saya adalah Web Shop Yang di buat oleh Ibnu Kamu mau membeli produk saya yang ada? Ke owner Saja ya... Produk nya scroll aja kebawah...";
+const typedText = document.getElementById("typed-text");
+let index = 0;
+
+function typeEffect() {
+if (index < text.length) {
+typedText.innerHTML += text.charAt(index);
+index++;
+setTimeout(typeEffect, 50); // kecepatan ngetik, ubah 40 jadi lebih kecil kalau mau lebih cepet
+}
+}
+
+window.onload = typeEffect;
+</script>
+<div style="display: flex; gap: 20px; justify-content: center; align-items: center; margin: 10px 0;">
+<a href="https://t.me/yaetiem" target="_blank">
+<img src="https://files.catbox.moe/xltp58.jpg" alt="Telegram" class="icon floating" />
+</a>
+<a href="https://wa.me/6283872913378" target="_blank">
+<img src="https://files.catbox.moe/ju5m1g.jpg" alt="WhatsApp" class="icon floating" />
+</a>
+</div>
+<p><strong>Bahasa Pemrograman yang Dikuasai:</strong></p>
+<div style="display: flex; gap: 20px; justify-content: center; align-items: center;">
+<img src="https://files.catbox.moe/jiw6da.jpg" alt="JavaScript" class="icon floating" />
+<img src="https://files.catbox.moe/zlyx85.jpg" alt="Css" class="icon floating" />
+</div>
+</div>
+<div class="page" id="partner">
+  <h2>DI BAWAH ADALAH PRODUK IBNU GANTENG</h2>
+  <div class="produk-list">
+
+    <!-- PARTNER VVIP -->
+    <div class="produk">
+      <img src="https://files.catbox.moe/8ie3qz.jpg" alt="PARTNER VVIP" class="floating" />
+      <p><strong>PARTNER VVIP</strong></p>
+      <p><strong>BENEFIT:</strong></p>
+      <ul style="text-align: left; padding-left: 15px;">
+        <li>- DAPET ALL MURID</li>
+        <li>- FUNC</li>
+        <li>- BASE</li>
+        <li>- APK BIOSKOP</li>
+        <li>- MURID DDOS PRIVAT</li>
+        <li>- MURBUG</li>
+        <li>- DLL</li>
+      </ul>
+      <p>Harga: Rp 15.000</p>
+      <a href="https://t.me/yaetiem" target="_blank"><button>Owner</button></a>
+      <a href="https://t.me/MizukiOgawaRR" target="_blank"><button>Channel</button></a>
+    </div>
+
+    <!-- NOKTEL -->
+    <div class="produk">
+      <img src="https://files.catbox.moe/8ie3qz.jpg" alt="NOKTEL" class="floating" />
+      <p><strong>NOKTEL</strong></p>
+      <p><strong>LIST NOKTEL</strong></p>
+      <ul style="text-align: left; padding-left: 15px;">
+        <li>- ID 1</li>
+        <li>- ID 2</li>
+        <li>- ID 3</li>
+        <li>- ID 4</li>
+        <li>- ID 5</li>
+        <li>- ID 6</li>
+        <li>- ID 7</li>
+      </ul>
+      <p>Harga: Rp 5.000 - 70.000</p>
+      <a href="https://t.me/yaetiem" target="_blank"><button>Owner</button></a>
+      <a href="https://t.me/MizukiOgawaRR" target="_blank"><button>Channel</button></a>
+    </div>
+
+    <!-- MURID SC -->
+    <div class="produk">
+      <img src="https://files.catbox.moe/8ie3qz.jpg" alt="MURID SC" class="floating" />
+      <p><strong>MURID SC</strong></p>
+      <p><strong>BENEFIT:</strong></p>
+      <ul style="text-align: left; padding-left: 15px;">
+        <li>- DI AJARIN BIKIN SC</li>
+        <li>- DI AJARIN FIX EROR SC</li>
+        <li>- DI KASIH TUTOR NARO FUNC</li>
+        <li>- DI KASIH TUTOR CREATE DB</li>
+        <li>- DI AJARIN CARA NARO DB</li>
+        <li>- DAPET FUNC GACOR</li>
+        <li>- DAPET BASE KECE</li>
+        <li>- DAPET BASE MAHAL</li>
+      </ul>
+      <p>Harga: Rp 10.000</p>
+      <a href="https://t.me/yaetiem" target="_blank"><button>Owner</button></a>
+      <a href="https://t.me/MizukiOgawaRR" target="_blank"><button>Channel</button></a>
+    </div>
+
+    <!-- MURBAND CHANNEL -->
+    <div class="produk">
+      <img src="https://files.catbox.moe/8ie3qz.jpg" alt="MURBAND CHANNEL" class="floating" />
+      <p><strong>MURBAND CHANNEL</strong></p>
+      <ul style="text-align: left; padding-left: 15px;">
+        <li>- BISA BAND CHANEL TELE</li>
+        <li>- BISA JADI KANG BAND CH</li>
+        <li>- ALL MT ANTI AMPAS</li>
+        <li>- UP MT TIAP HARI</li>
+        <li>- MT KEBAKAR AUTO DI GANTI</li>
+        <li>- DLL</li>
+      </ul>
+      <p>Harga: Rp 10.000 - 50.000</p>
+      <a href="https://t.me/yaetiem" target="_blank"><button>Owner</button></a>
+      <a href="https://t.me/MizukiOgawaRR" target="_blank"><button>Channel</button></a>
+    </div>
+
+    <!-- SCRIPT OBF -->
+    <div class="produk">
+      <img src="https://files.catbox.moe/8ie3qz.jpg" alt="SCRIPT OBF" class="floating" />
+      <p><strong>SCRIPT OBF</strong></p>
+      <p><strong>BENEFIT:</strong></p>
+      <ul style="text-align: left; padding-left: 15px;">
+        <li>- DAPAT 2 SCRIPT BUTTON DAN NO BUTTON</li>
+        <li>- SCRIPT NO ENC</li>
+        <li>- FITUR BAGUS</li>
+      </ul>
+      <p>Harga: Rp 15.000</p>
+      <a href="https://t.me/yaetiem" target="_blank"><button>Owner</button></a>
+      <a href="https://t.me/MizukiOgawaRR" target="_blank"><button>Channel</button></a>
+    </div>
+    
+    <!-- USERBOT -->
+    <div class="produk">
+      <img src="https://files.catbox.moe/8ie3qz.jpg" alt="USERBOT" class="floating" />
+      <p><strong>USERBOT</strong></p>
+      <p><strong>BENEFIT:</strong></p>
+      <ul style="text-align: left; padding-left: 15px;">
+        <li>- MEMILIKI 211 MODULE</li>
+        <li>- ANTI DELAY</li>
+        <li>- ALL FITUR WORK</li>
+        <li>- PERMANEN</li>
+      </ul>
+      <p>Harga: Rp 5.000</p>
+      <a href="https://t.me/yaetiem" target="_blank"><button>Owner</button></a>
+      <a href="https://t.me/MizukiOgawaRR" target="_blank"><button>Channel</button></a>
+    </div> 
+     
+    <!-- SCRIPT DDOS -->
+    <div class="produk">
+      <img src="https://files.catbox.moe/8ie3qz.jpg" alt="SCRIPT DDOS" class="floating" />
+      <p><strong>SCRIPT DDOS</strong></p>
+      <p><strong>BENEFIT:</strong></p>
+      <ul style="text-align: left; padding-left: 15px;">
+        <li>- BISA OPEN MURID DDOS</li>
+        <li>- DI AJARIN DDOS</li>
+        <li>- VIA TELEGRAM</li>
+        <li>- SCRIPT GACOR</li>
+      </ul>
+      <p>Harga: Rp 10.000</p>
+      <a href="https://t.me/yaetiem" target="_blank"><button>Owner</button></a>
+      <a href="https://t.me/MizukiOgawaRR" target="_blank"><button>Channel</button></a>
+    </div>
+
+  </div>
+
+  <nav style="margin-top: 20px;">
+    <button onclick="scrollToHome()">Back</button>
+  </nav>
+</div>
+ 
+  </nav>  
+</div>    <script>  
+    const music = document.getElementById("bg-music");  
+    const musicPlayer = document.getElementById("music-player");  
+    const seekBar = document.getElementById("seek-bar");  
+    const currentTimeEl = document.getElementById("current-time");  
+    const durationEl = document.getElementById("duration");  
+  
+    function toggleMusic() {  
+      if (music.paused) {  
+        music.play();  
+        musicPlayer.style.display = "block";  
+      } else {  
+        music.pause();  
+      }  
+    }  
+  
+    function stopMusic() {  
+      music.pause();  
+      music.currentTime = 0;  
+    }  
+  
+    music.addEventListener("loadedmetadata", () => {  
+      seekBar.max = music.duration;  
+      durationEl.textContent = formatTime(music.duration);  
+    });  
+  
+    music.addEventListener("timeupdate", () => {  
+      seekBar.value = music.currentTime;  
+      currentTimeEl.textContent = formatTime(music.currentTime);  
+    });  
+  
+    seekBar.addEventListener("input", () => {  
+      music.currentTime = seekBar.value;  
+    });  
+  
+    function formatTime(time) {  
+      const minutes = Math.floor(time / 60);  
+      const seconds = Math.floor(time % 60).toString().padStart(2, "0");  
+      return `${minutes}:${seconds}`;  
+    }  
+  
+    function scrollToProduk() {  
+      document.getElementById("produk").scrollIntoView({ behavior: "smooth" });  
+    }  
+  
+    function scrollToHome() {  
+      document.getElementById("home").scrollIntoView({ behavior: "smooth" });  
+    }  
+  </script>  </body>  
+</html>
